@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport", content="width= device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>SSCR - M College Pre-Registration Form</title>
+</head> 
+      <body>
+        <div class="header">
+        <a href="https://sscrmnl.edu.ph/" target="_blank" class="title-link">
+        <img src="SSCR-MNL Seal.png" alt="Logo of SSC- R MNL" class="logo">
+        <h1 class="title">San Sebastian College - Recoletos Manila</h1> 
+          <div class="subtext">
+          <p>Caritas et Scientia</p> 
+          </div>
+        </a>
+        </div>
+
+        <div class="text">
+          <div class="box">
+          <p>College Pre-Registration</p>
+          </div>
+          <div class="guide">
+           <p>Kindly fill-out the online application form for a fast and efficient admissions procedure.</p>
+          </div>
+
+      <form id="surver-form"></form>
+      <fieldset>
+		    <label for="last-name">Last Name: <input id="last-name" name="last-name" type="text" placeholder="Dela Cruz" required /></label>
+        <label for="first-name">First Name: <input id="first-name" name="first-name" type="text" placeholder="Juan" required /></label>
+        <label for="middle-name">Middle Name: <input id="middle-name" name="middle-name" type="text" placeholder="Macabugto" required /></label>
+        <div class="suffix-container">
+        <label for="no-suffix">No Middle Name &nbsp;<input type="checkbox" id="no-suffix"></label></div>
+        <label for="suffix">Suffix: <input id="suffix" name="suffix" type="text" placeholder="Jr, Sr, II, etc." required /></label>
+        <div class="suffix-container">
+        <label for="no-suffix">No Suffix &nbsp;<input type="checkbox" id="no-suffix"></label></div>
+        </fieldset>
+
+        <fieldset>
+          <div class="sex-label">
+          <label id="sex-label">Sex: &nbsp;</label>
+          <label id="Male">Male<input for="sex" name="sex" class="inline" type="radio" checked></label>
+          <label id="Female">Female<input for="sex" name="sex" class="inline" type="radio" checked></label>
+          </div> 
+          </fieldset>
+  
+          <fieldset>
+          <div class="age">
+          <label for="age">Age: </label>
+          <input id="number-label" type="number" placeholder="Age" min="15" max="120" required>
+          </div>
+          </fieldset>
+  
+          <fieldset>
+            <label for="birthday">Date of Birth:</label>
+            <input type="date" id="birthday" name="birthday" required>
+          </fieldset>
+
+      <fieldset>
+        <label for="program-select">Program Offerings / Desired Program: </label>
+          <select id="program-select" name="program">
+            <option value="">-- Select Program --</option>
+            <option value="BAB">Bachelor of Arts in Broadcasting (BAB)</option>
+            <option value="BAC">Bachelor of Arts in Communication (BAC)</option>
+            <option value="BAJ">Bachelor of Arts in Journalism (BAJ)</option>
+            <option value="BAPS">Bachelor of Arts in Political Science (BAPS)</option>
+            <option value="BSCRIM">Bachelor of Science in Criminology (BSCRIM)</option>
+            <option value="BSPSY">Bachelor of Science in Psychology (BSPSY)</option>
+            <option value="BSA">Bachelor of Science in Accountancy (BSA)</option>
+            <option value="BSSCM">Bachelor of Science in Supply Chain Management (BSSCM)</option>
+            <option value="BSBA - BM">Bachelor of Science in Business Administration Major in Business Management (BSBA - BM)</option>
+            <option value="BSBA - FM">Bachelor of Science in Business Administration Major in Financial Management (BSBA - FM)</option>
+            <option value="BSBA - LM">Bachelor of Science in Business Administration Major in Legal Management (BSBA - LM)</option>
+            <option value="BSBA - MM">Bachelor of Science in Business Administration Major in Marketing Managemenet (BSBA - MM)</option>
+            <option value="BSBA - HRDM">Bachelor of Science in Business Administration Major in Human Resource Development Management (BSBA - HRDM)</option>
+            <option value="BSBA - FMA">Bachelor of Science in Business Administration Major in Financial Managerial Accounting (BSBA - FMA)</option>
+            <option value="BSCS">Bachelor of Science in Computer Science (BSCS)</option>
+            <option value="BSIT">Bachelor of Science in Information Technology (BSIT)</option>
+            <option value="BSEMC">Bachelor of Science in Entertainment and Multimedia Computing (BSEMC)</option>
+            <option value="BSIE">Bachelor of Science in Industrial Engineering (BSIE)</option>
+            <option value="BSESS">Bachelor of Science in Exercise and Sports Sciences (BSESS)</option>
+            <option value="BSHM">Bachelor of Science in Hospitality Management (BSHM)</option>
+            <option value="BSTM">Bachelor of Science in Tourism Management (BSTM)</option>
+            <option value="BSHRM T1"> Bachelor of Science in Hotel and Restaurant Management Track 1 (BSHRM T1)</option>
+            <option value="BSHRM T2"> Bachelor of Science in Hotel and Restaurant Management Track 2 (Cullinary) (BSHRM T2)</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <div class="student-category">
+          <label id="student-category">Student Category: &nbsp;</label>
+          <label id="New Student">New Student<input value="New Student" name="student-category" class="inline" type="radio" checked required></label>
+          <label id="Returnee">Returnee<input value="Returnee" name="student-category" class="inline" type="radio" required></label>
+          <label id="Old Student">Old Student<input value="Old Student" name="student-category" class="inline" type="radio" required></label>
+        </div>
+        </fieldset>
+
+        <fieldset>
+        <label for="cellphone">Cellphone Number:</label>
+        <input type="tel" id="cellphone" name="cellphone" pattern="^09\d{9}$" placeholder="09XX-XXX-XXXX" required>
+        </fieldset>
+        
+        <fieldset>
+        <label for="email">Email Address: <input id="email" name="email" type="email" placeholder="Sample@gmail.com" required/></label>
+        <p class="note-email">NOTE: Email Address must be VALID and ACTIVE</p>
+        </fieldset>
+
+        <fieldset>
+        <div class="heard-from">
+        <legend>Where have you heard about San Sebastian College Recoletos - Manila?</legend>
+            
+        <label>
+        <input value="Social Media" type="checkbox" name="heard-from" checked>
+        Social Media (e.g., Facebook, TikTok)
+        </label>
+        
+        <label>
+        <input value="Friends / Families" type="checkbox" name="heard-from">
+        Friends / Families
+        </label>
+        
+        <label>
+        <input value="Employee" type="checkbox" name="heard-from">
+        Employee from the school
+        </label>
+
+        <label>
+        Others: 
+        <textarea id="bio" name="bio" rows="3" cols="30"></textarea>
+        
+        </label>
+      </div>
+      </fieldset>
+
+      <fieldset>
+        <p class="confidentiality">CONFIDENTIALITY NOTICE: The information provided during registration is strictly confidential 
+        and will be handled in accordance with the Data Privacy Act of 2012. It will only be used for 
+        official school purposes and will not be shared without your consent. If you believe your information
+        has been received or accessed in error, please contact us immediately at 02-87348931 to 39 local 111.
+        </p>
+
+        Thank you for trusting us, and <h2> Bravo Baste!</h2>
+      </fieldset>
+
+      <button id="submit">Submit Pre-Registration</button>
+      </form>
+			</header>
+      </div>
+      </div>
+      </form>
+      </div>
+      </body>
+  </html>
